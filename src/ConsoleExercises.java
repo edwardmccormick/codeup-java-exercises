@@ -24,7 +24,7 @@ public class ConsoleExercises {
 
         System.out.println("The words you entered were: word 1:");
         System.out.println(string1 + ", word 2:" + string2 + ", word 3: " + string3 + ".");
-
+        in.nextLine();
         System.out.println("Enter a sentence, please:");
         sentence1 = in.nextLine();
         System.out.println("The sentence you entered was: " + sentence1 + ".");
