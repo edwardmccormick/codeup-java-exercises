@@ -13,6 +13,7 @@ public class MethodsExercises {
         System.out.println(multiplicationRecursive(10,8));
         getInteger(10,1);
         System.out.println(factorial());
+//        System.out.println(factorialRecursive(getInteger(20,1)));
         diceRoll();
 
     }
@@ -55,12 +56,18 @@ public class MethodsExercises {
     public static long factorial() {
         long result = 1;
         Scanner in = new Scanner(System.in);
-        System.out.println("Please enter a number between 1 and 20");//20! is 2,432,902,008,176,640,000 - Java process 20! as -4249290049419214848 because it overflowed its memory container
+        System.out.println("Please enter a number between 1 and 20");//20! is 2,432,902,008,176,640,000 - Java process 21! as -4249290049419214848 because it overflowed its memory container
         int input = in.nextInt();
         if (input > 21 | input < 1) {System.out.println("Please select again, your choice was outside the range."); factorial();}
         else {while (input > 1) {result = result * input;input--;}}
         return result;
     }
+//    public static long factorialRecursive(int x) {
+//        long result = 1;
+//        if (x>1) {result = result * factorialRecursive(x);}
+//        return result;
+//    }
+
     public static void diceRoll() {
         Scanner in = new Scanner(System.in);
         Random dice1 = new Random();
