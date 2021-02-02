@@ -18,6 +18,14 @@ public class Person {
         System.out.printf("Hello there from %s!%n", this.name);
     }
 
+    public static Person[] addPerson(Person[] input, Person addThisPerson) {
+        Person [] output = new Person[input.length + 1];
+        for (int i = 0; i < input.length; i++) {
+            output[i] = input[i];
+        }
+        output[input.length] = addThisPerson;
+        return output;
+    }
 
     public static void main(String[] args) {
 //        Person person1 = new Person("John");

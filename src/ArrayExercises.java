@@ -14,6 +14,14 @@ public class ArrayExercises {
             System.out.println(individual.getName());
         }
 
+        Person addMe = new Person("David Stephens");
+
+        Person[] updatedTeam = Person.addPerson(team,addMe);
+
+        for (Person individual : updatedTeam) {
+            System.out.println(individual.getName());
+        }
+
 
 
     }
