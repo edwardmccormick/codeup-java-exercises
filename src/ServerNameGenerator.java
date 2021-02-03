@@ -10,7 +10,7 @@ public class ServerNameGenerator {
     public static Random random2 = new Random();
 
     public static String newServerName() {
-    return adjectives[random1.nextInt(9)] + "-" + nouns[random2.nextInt(9)];
+    return adjectives[random1.nextInt(adjectives.length)] + "-" + nouns[random2.nextInt(nouns.length)];
     }
 
     public static void main(String[] args) {

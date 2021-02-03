@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class MoviesApplication {
     public static void getCategory(String genre) {
         Movie[] allMovies = MoviesArray.findAll();
-//        Movie[] genreMovies;
         for (int i = 0; i<allMovies.length; i++) {
             if (allMovies[i].getCategory().equalsIgnoreCase(genre)) {
                 System.out.println(allMovies[i].getName());
@@ -26,7 +25,9 @@ while (true) {
                 "2 - view movies in the animated category\n" +
                 "3 - view movies in the drama category\n" +
                 "4 - view movies in the horror category\n" +
-                "5 - view movies in the scifi category\n");
+                "5 - view movies in the scifi category\n" +
+                "\n" +
+                "Enter your choice: ");
         int input = util.Input.getInt(0, 5);
         if (input == 0) {
             System.out.println("Thank you, and goodbye!");break;}
