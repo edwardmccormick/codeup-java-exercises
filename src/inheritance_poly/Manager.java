@@ -7,4 +7,8 @@ public class Manager extends Employee {
     public Manager(String employeeName){
         super(employeeName);
     }
+
+    public void doWork() {
+        System.out.println("Fill out your timesheets, please.");
+    }
 }
