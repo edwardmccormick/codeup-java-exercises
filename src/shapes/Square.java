@@ -1,6 +1,6 @@
 package shapes;
 
-public class Square extends Rectangle {
+public class Square extends Quadrilateral implements Measurable{
 
 //    Square (double length, double width) {
 //        this.length = length;
@@ -10,6 +10,18 @@ public class Square extends Rectangle {
 //        this.length = lengthSide;
 //        this.width = lengthSide;
         super(lengthSide,lengthSide);
+    }
+
+    @Override
+    public void setLength(double length) {
+        this.length = length;
+        this.width = length;
+    }
+
+    @Override
+    public void setWidth(double width) {
+        this.width = width;
+        this.length = width;
     }
 
     @Override
