@@ -32,13 +32,13 @@ public class Student {
         return gradeTotal / this.grades.size();
     }
 
-//    public static void main(String[] args) {
-//        Student bob = new Student();
-//        bob.addGrade(99);
-//        bob.addGrade(84);
-//        bob.addGrade(95);
-//        System.out.println("bob.getGrades() = " + bob.getGrades());
-//        System.out.println("bob.getGradeAverage() = " + bob.getGradeAverage());
-//    }
+    public static void main(String[] args) {
+        Student bob = new Student();
+        bob.addGrade(99);
+        bob.addGrade(84);
+        bob.addGrade(95);
+        System.out.println("bob.getGrades() = " + bob.getGrades());
+        System.out.println("bob.getGradeAverage() = " + bob.getGradeAverage());
+    }
 
 }
