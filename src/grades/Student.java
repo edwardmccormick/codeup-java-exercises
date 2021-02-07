@@ -20,6 +20,14 @@ public class Student {
         return this.grades;
     }
 
+    public int getGrades(int a) {
+        return (int)this.grades.get(a);
+    }
+
+    public int getGradesSize() {
+        return this.grades.size();
+    }
+
     public void addGrade(int grade) {
         this.grades.add(grade);
     }
