@@ -22,7 +22,8 @@ public class Input {
     public static int getInt (int min, int max) {
         Scanner scanner = new Scanner(System.in);
 //        System.out.println("Please enter a number between " + min + " and " + max);
-        int input = scanner.nextInt();
+        String s = scanner.nextLine();
+        int input = Integer.valueOf(s);
         if (input > max | input < min) {System.out.println("Please select again, your choice was outside the range."); getInt(min, max);}
 //        else {System.out.println("Thank you, your selection was within the range.");}
         return input;
@@ -31,7 +32,8 @@ public class Input {
     public static int getInt (int min, int max, String question) {
         Scanner scanner = new Scanner(System.in);
         System.out.println(question);
-        int input = scanner.nextInt();
+        String s = scanner.nextLine();
+        int input = Integer.valueOf(s);
         if (input > max | input < min) {System.out.println("Please select again, your choice was outside the range."); getInt(min, max);}
         else {System.out.println("Thank you, your selection was within the range.");}
         return input;
@@ -40,7 +42,8 @@ public class Input {
     public static int getInt() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter a number.");
-        return scanner.nextInt();
+        String s = scanner.nextLine();
+        return Integer.valueOf(s);
         }
 
     public static double getDouble(double min, double max) {

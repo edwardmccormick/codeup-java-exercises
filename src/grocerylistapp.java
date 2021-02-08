@@ -49,8 +49,7 @@ public class grocerylistapp {
 
 
             }
-            }
+            } while(true);
             }
         }
     }
-}
