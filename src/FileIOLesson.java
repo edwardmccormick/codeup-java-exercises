@@ -10,6 +10,28 @@ import java.util.HashMap;
 import java.io.File;
 import java.util.List;
 
+/*
+IO - input output
+
+reading writing to/from file programmatically
+
+java.io and java.nio
+
+-path : location of a file
+- file: data on a storage device
+- absolute and relative: absolute 600 Navarro St
+Relative path: Go left, turn right, it should be straight ahead of you.
+
+How do we work with files?
+
+Classes and Objects
+Classes: "paths" and "files" --utility static methods
+Objects: instances of "Path" and "File"
+-String - /src/img/movies/person.class (?) entire file contents
+- List<String>: Lines in a file
+- Streaming big files and binary files - can read very large files small pieces at a time
+ */
+
 public class FileIOLesson {
     //    1. create a class named 'FileIOLesson'
 //    2. do your work inside a main method
